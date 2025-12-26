@@ -1,22 +1,131 @@
+# Banking Management System (Java)
 
-## Getting Started
+A **console-based Banking Management System** developed using **Core Java**.  
+This project allows users to create and manage bank accounts with features like deposit, withdrawal, transfer, and data persistence using file handling.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+---
 
-## Folder Structure
+## 📌 Project Overview
 
-The workspace contains two folders by default, where:
+The Banking Management System is a menu-driven Java application designed to demonstrate:
+- Object-Oriented Programming (OOP)
+- Java Collections
+- File Handling & Serialization
+- Exception Handling
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+The application stores account data locally and restores it when restarted.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🚀 Features
 
-## Dependency Management
+- Create new bank accounts
+- View account details
+- Deposit money
+- Withdraw money
+- Transfer money between accounts
+- Display all accounts
+- Persistent data storage using file system
+- Simple and user-friendly console menu
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-# Banking-Management-Sytem
-80b5c54bd511f0551edd964fe645367e59993d3e
+---
+
+## 🛠️ Technologies Used
+
+- Java (JDK 11 or above)
+- VS Code
+- Core Java concepts:
+  - OOP (Encapsulation, Abstraction)
+  - Collections (`HashMap`)
+  - File Handling
+  - Serialization
+  - Exception Handling
+
+---
+
+## 📁 Project Structure
+
+```
+Banking-Management-System/
+│
+├── Account.java      # Account model
+├── Bank.java         # Banking operations logic
+├── DataStore.java    # File save & load logic
+├── Main.java         # Application entry point
+├── bank_data.db      # Auto-generated data file
+└── README.md
+```
+
+---
+
+## ⚙️ How to Run the Project
+
+### Prerequisites
+- Java JDK 11 or later
+- VS Code (recommended)
+- Extension Pack for Java (VS Code)
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vijay93902/Banking-Management-Sytem.git
+   ```
+
+2. Open the project folder in VS Code
+
+3. Compile the Java files:
+   ```bash
+   javac *.java
+   ```
+
+4. Run the application:
+   ```bash
+   java Main
+   ```
+
+---
+
+## 📋 Sample Menu
+
+```
+=== Banking Management System ===
+1. Create account
+2. View account
+3. Deposit
+4. Withdraw
+5. Transfer
+6. List all accounts
+7. Save data
+0. Exit
+```
+
+---
+
+## 💾 Data Persistence
+
+- All account data is saved in `bank_data.db`
+- Data is automatically loaded when the application restarts
+
+---
+
+## 🔮 Future Enhancements
+
+- MySQL database integration using JDBC
+- Login system with PIN authentication
+- Transaction history
+- GUI using JavaFX or Swing
+- Web application using Spring Boot
+
+---
+
+## 👨‍💻 Author
+
+**Vijay Boya**  
+GitHub: https://github.com/Vijay93902
+
+---
+
+## 📜 License
+
+This project is created for **learning and educational purposes**.
